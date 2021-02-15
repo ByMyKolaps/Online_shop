@@ -40,6 +40,12 @@ p {
 
 .city {
 	margin-right: 400px;
+	color: black;
+	text-decoration: none;
+}
+
+.city:hover {
+	color: #ed2325;
 }
 
 .header__top__inner {
@@ -90,8 +96,9 @@ p {
 
 .header__bot__inner {
 	padding: 10px 15px;
-	display: flex;
+	display: inline-flex;
 	width: 100%;
+	justify-content: space-between;
 }
 
 /* NAV
@@ -105,10 +112,12 @@ p {
     margin-left: 40px;
     margin-top: 20px;
 	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Ubuntu', sans-serif;
+	color: black;
 }
 
 .nav__bucket {
- 	margin-left: 300px;
  	border: none;
  	color: black;
  	text-transform: uppercase;
@@ -136,10 +145,16 @@ p {
 .bucket__icon {
 	height: 25px;
 	margin-right: 10px;
+	width: 25px;
 }
 
 .nav__bucket:hover {
 	color:#fff;
+	background-color: red;
+}
+
+.nav__bucket:hover .bucket__icon {
+	fill: #fff;
 	background-color: red;
 }
 
